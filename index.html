@@ -62,8 +62,8 @@
           // Browser doesn't support Geolocation
           handleLocationError(false, infoWindow, map.getCenter());
 
-      }
-    }
+      } });
+    
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
@@ -86,7 +86,7 @@
                               'Error: Your browser doesn\'t support geolocation.');
         infoWindow.open(map);
       }
-      
+
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwdB99IWcFMseAIyB3EKXRKb9VcwZjUPE&callback=initMap">
